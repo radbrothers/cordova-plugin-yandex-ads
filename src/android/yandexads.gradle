@@ -4,16 +4,42 @@ cdvPluginPostBuildExtras.add({
           sourceCompatibility JavaVersion.VERSION_1_8
           targetCompatibility JavaVersion.VERSION_1_8
       }
-      buildToolsVersion "33.0.2"
     }
+    repositories {
+    google()
+    mavenCentral()
+    // IronSource
+    maven {
+       url 'https://android-sdk.is.com/'
+    }         
+    // Pangle
+    maven { 
+       url 'https://artifact.bytedance.com/repository/pangle'
+    }        
+    // Tapjoy
+    maven { 
+       url "https://sdk.tapjoy.com/"
+    }        
+    // Mintegral
+    maven { 
+       url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea"
+    }
+    // Chartboost
+    maven {
+       url "https://cboost.jfrog.io/artifactory/chartboost-ads/"
+    }
+    // AppNext
+    maven {
+       url "https://dl.appnext.com/"
+    }
+}
 
     dependencies {
         implementation fileTree(dir: 'libs', include: ['*.jar'])
-        implementation 'com.yandex.android:mobileads:7.0.0'
-        implementation 'com.google.android.exoplayer:exoplayer:2.18.1'
-//         implementation 'com.yandex.android:mobmetricalib:5.2.0'
-//
-//         implementation 'com.yandex.ads.mediation:mobileads-mytarget:5.15.0.0'
-//         implementation 'com.my.target:mytarget-sdk:5.15.0'
+        implementation 'com.yandex.android:mobileads:7.4.0'
+        // implementation 'com.google.android.exoplayer:exoplayer-core:2.18.1'
+        // implementation 'com.yandex.android:mobileads-mediation:7.3.0.0'
+        // implementation 'com.yandex.android:mobileads:6.4.1'
+        // implementation 'com.yandex.ads.mediation:mobileads-mintegral:16.5.81.0'
     }
 });
