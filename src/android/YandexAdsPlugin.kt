@@ -133,7 +133,7 @@ class YandexAdsPlugin : CordovaPlugin() {
         val bannerAtTop = options.optBoolean(KEY_BANNER_AT_TOP, false)
         val bannerSize = options.optJSONObject(KEY_BANNER_SIZE)
 
-        val intreamContentUrl = Uri.parse("android.resource://" + cordova.context.packageName + "/" + R.raw.jc).toString()
+        val intreamContentUrl = Uri.parse("android.resource://" + cordova.context.packageName + "/" + R.jc).toString()
 
         bannerAdsHelper = BannerAdsHelper(this, webView, bannerBlockId, bannerAtTop, bannerSize)
         rewardedAdsHelper = RewardedAdsHelper(this, webView, rewardedBlockId)
