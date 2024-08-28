@@ -2,7 +2,7 @@ package io.luzh.cordova.plugin
 
 import android.net.Uri
 import android.util.Log
-import com.demo.stand.R
+import android.R
 import com.yandex.mobile.ads.common.InitializationListener
 import com.yandex.mobile.ads.common.MobileAds.initialize
 import com.yandex.mobile.ads.common.MobileAds.setUserConsent
@@ -133,7 +133,7 @@ class YandexAdsPlugin : CordovaPlugin() {
         val bannerAtTop = options.optBoolean(KEY_BANNER_AT_TOP, false)
         val bannerSize = options.optJSONObject(KEY_BANNER_SIZE)
 
-        val intreamContentUrl = Uri.parse("android.resource://" + cordova.context.packageName + "/" + R.raw.jc.mp4).toString()
+        val intreamContentUrl = Uri.parse("android.resource://" + cordova.context.packageName + "/" + R.raw.jc).toString()
 
         bannerAdsHelper = BannerAdsHelper(this, webView, bannerBlockId, bannerAtTop, bannerSize)
         rewardedAdsHelper = RewardedAdsHelper(this, webView, rewardedBlockId)
