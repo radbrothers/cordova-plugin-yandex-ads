@@ -2,7 +2,7 @@ package io.luzh.cordova.plugin
 
 import android.net.Uri
 import android.util.Log
-import package.R
+import R
 import com.yandex.mobile.ads.common.InitializationListener
 import com.yandex.mobile.ads.common.MobileAds.initialize
 import com.yandex.mobile.ads.common.MobileAds.setUserConsent
