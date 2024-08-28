@@ -54,7 +54,7 @@ class YandexAdsPlugin : CordovaPlugin() {
     private var rewardedAdsHelper: RewardedAdsHelper? = null
     private var interstitialAdsHelper: InterstitialAdsHelper? = null
     private var openAppAdsHelper: OpenAppAdsHelper? = null
-    private var instreamAdsHelper: InstreamAdsHelper? = null
+    // private var instreamAdsHelper: InstreamAdsHelper? = null
     private var feedAdsHelper: FeedAdsHelper? = null
 
     @Throws(JSONException::class)
