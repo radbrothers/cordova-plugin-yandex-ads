@@ -38,6 +38,9 @@
             <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
 
             <activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:theme="@android:style/Theme.Translucent" />
+
+	    <meta-data android:name="com.yandex.mobile.ads.AUTOMATIC_SDK_INITIALIZATION" android:value="false"/>
+	    <meta-data android:name="com.google.android.gms.ads.DELAY_APP_MEASUREMENT_INIT" android:value="true"/>
         </config-file>
 
         <source-file src="src/android" target-dir="java/io.luzh.cordova.plugin" />
@@ -75,8 +78,8 @@
                 <source url="https://cdn.cocoapods.org/"/>
             </config>
             <pods use-frameworks="true">
-                <pod name="YandexMobileAdsMediation" spec="~> 6.4.1" />
-                <!-- <pod name="YandexMobileAds" spec="~> 6.4.1" /> -->
+                <pod name="YandexMobileAdsMediation" spec="~> 7.6.1" />
+                <!-- <pod name="YandexMobileAds" spec="~> 7.6.1" /> -->
             </pods>
         </podspec>
 
