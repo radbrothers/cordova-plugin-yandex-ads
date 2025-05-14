@@ -78,7 +78,7 @@
                 <source url="https://cdn.cocoapods.org/"/>
             </config>
             <pods use-frameworks="true">
-                <pod name="YandexMobileAdsMediation" spec="~> 7.12.0" />
+                <pod name="YandexMobileAdsMediation" spec="~> 7.12.2" />
                 <!-- <pod name="YandexMobileAds" spec="~> 7.6.1" /> -->
                 <!-- <pod name="YandexMobileAdsMediation" spec="~> 7.6.1" /> -->
             </pods>
@@ -986,6 +986,6 @@
 </array>
 </config-file>
 
-    <hook type="after_prepare" src="hooks/DeploymentTargetFix.js"/>    
+    <!-- <hook type="after_prepare" src="hooks/DeploymentTargetFix.js"/> -->    
     </platform>
 </plugin>
