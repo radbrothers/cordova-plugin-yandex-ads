@@ -78,7 +78,7 @@
                 <source url="https://cdn.cocoapods.org/"/>
             </config>
             <pods use-frameworks="true">
-                <pod name="YandexMobileAdsMediation" spec="~> 7.12.2" />
+                <pod name="YandexMobileAdsMediation" spec="~> 7.12.3" />
                 <!-- <pod name="YandexMobileAds" spec="~> 7.6.1" /> -->
                 <!-- <pod name="YandexMobileAdsMediation" spec="~> 7.6.1" /> -->
             </pods>
