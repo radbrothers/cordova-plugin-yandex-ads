@@ -986,6 +986,7 @@
 </array>
 </config-file>
 
-    <hook type="after_prepare" src="hooks/DeploymentTargetFix.js"/>   
+    <hook type="after_prepare" src="hooks/DeploymentTargetFix.js"/>
+    <hook type="after_prepare" src="hooks/add_tools_namespace.js"/>   
     </platform>
 </plugin>
