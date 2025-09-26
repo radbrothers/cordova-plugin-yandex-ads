@@ -4,6 +4,12 @@ cdvPluginPostBuildExtras.add({
           sourceCompatibility JavaVersion.VERSION_1_8
           targetCompatibility JavaVersion.VERSION_1_8
       }
+      kotlinOptions {
+          jvmTarget = "1.8"
+      }
+      composeOptions {
+          kotlinCompilerExtensionVersion = "1.4.8"
+      }
     }
     repositories {
     google()
@@ -36,8 +42,8 @@ cdvPluginPostBuildExtras.add({
 
     dependencies {
         implementation fileTree(dir: 'libs', include: ['*.jar'])
-        // implementation 'com.yandex.android:mobileads-mediation:7.15.2.0'
-        implementation 'com.yandex.android:mobileads:7.15.2'
+        // implementation 'com.yandex.android:mobileads-mediation:7.16.0.0'
+        implementation 'com.yandex.android:mobileads:7.16.0'
         // implementation 'com.yandex.ads.mediation:mobileads-mintegral:16.5.81.0'
     }
 });
