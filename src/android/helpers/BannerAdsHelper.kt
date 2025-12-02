@@ -137,7 +137,7 @@ internal class BannerAdsHelper(
                 if (contentView != null) {
                     contentView.bringToFront()
                     contentView.requestLayout()
-                    contentView.requestFocus()
+                    //contentView.requestFocus()
                 }
             }
 
