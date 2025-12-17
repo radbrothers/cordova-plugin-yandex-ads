@@ -70,7 +70,7 @@ internal class BannerAdsHelper(
                 }
 
                 bannerParrentLayout?.addView(mBannerAdView, bannerLayoutParams)
-                bannerParrentLayout?.bringToFront()
+                //bannerParrentLayout?.bringToFront()
             } else {
                 val view = cordovaWebView.view
                 val wvParentView = view.parent as? ViewGroup
@@ -135,8 +135,8 @@ internal class BannerAdsHelper(
 
                 val contentView = cordova.activity.findViewById<ViewGroup>(R.id.content)
                 if (contentView != null) {
-                    contentView.bringToFront()
-                    contentView.requestLayout()
+                    //contentView.bringToFront()
+                    //contentView.requestLayout()
                     //contentView.requestFocus()
                 }
             }
@@ -268,7 +268,7 @@ internal class BannerAdsHelper(
                         ).apply { addRule(alignRule) }
 
                         bannerParrentLayout?.addView(mBannerAdView, bannerParrentParams)
-                        bannerParrentLayout?.bringToFront()
+                        //bannerParrentLayout?.bringToFront()
                     } else {
                         val layoutParams = RelativeLayout.LayoutParams(
                             RelativeLayout.LayoutParams.WRAP_CONTENT,
