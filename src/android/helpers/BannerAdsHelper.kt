@@ -149,6 +149,11 @@ internal class BannerAdsHelper(
         cordova.getActivity().runOnUiThread(Runnable {
             hideBannerView()
             mBannerAdView = BannerAdView(cordova.activity)
+
+            mBannerAdView.isFocusable = false
+            mBannerAdView.isFocusableInTouchMode = false
+            mBannerAdView.descendantFocusability = ViewGroup.FOCUS_BLOCK_DESCENDANTS
+        
             mBannerAdView?.setAdUnitId(blockId)
 
             // determine the size of the advertising banner
