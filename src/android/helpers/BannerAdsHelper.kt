@@ -148,11 +148,19 @@ internal class BannerAdsHelper(
     override fun load(callbackContext: CallbackContext) {
         cordova.getActivity().runOnUiThread(Runnable {
             hideBannerView()
-            mBannerAdView = BannerAdView(cordova.activity)
+            
+            // 1. Initialize the BannerAdView
+        val bannerView = BannerAdView(cordova.activity)
+        mBannerAdView = bannerView
 
-            mBannerAdView.isFocusable = false
-            mBannerAdView.isFocusableInTouchMode = false
-            mBannerAdView.descendantFocusability = ViewGroup.FOCUS_BLOCK_DESCENDANTS
+        // 2. Disable D-pad/Keyboard focusability
+        bannerView.isFocusable = false
+        bannerView.isFocusableInTouchMode = false
+        
+        // 3. For complex views (like ads), ensure children don't steal focus
+        if (bannerView is ViewGroup) {
+            bannerView.descendantFocusability = ViewGroup.FOCUS_BLOCK_DESCENDANTS
+        }
         
             mBannerAdView?.setAdUnitId(blockId)
 
