@@ -51,7 +51,7 @@ internal class BannerAdsHelper(
                     RelativeLayout.LayoutParams.MATCH_PARENT,
                     RelativeLayout.LayoutParams.WRAP_CONTENT
                 ).apply {
-                    val alignRule = if (bannerAtTop) RelativeLayout.ALIGN_PARENT_TOP
+                    val alignRule = if (bannerAtTop) RelativeLayout.ALIGN_PARENT_LEFT
                     else RelativeLayout.ALIGN_PARENT_LEFT
 
                     addRule(alignRule)
