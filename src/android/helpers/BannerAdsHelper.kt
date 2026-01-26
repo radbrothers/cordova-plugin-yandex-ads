@@ -51,8 +51,8 @@ internal class BannerAdsHelper(
                     RelativeLayout.LayoutParams.MATCH_PARENT,
                     RelativeLayout.LayoutParams.WRAP_CONTENT
                 ).apply {
-                    val alignRule = if (bannerAtTop) RelativeLayout.ALIGN_PARENT_LEFT
-                    else RelativeLayout.ALIGN_PARENT_LEFT
+                    val alignRule = if (bannerAtTop) RelativeLayout.ALIGN_PARENT_START
+                    else RelativeLayout.ALIGN_PARENT_START
 
                     addRule(alignRule)
                 }
@@ -98,7 +98,7 @@ internal class BannerAdsHelper(
 
                 bannerContainerLayout = RelativeLayout(cordovaPlugin.cordova.activity)
 
-                bannerContainerLayout?.gravity = Gravity.BOTTOM
+                bannerContainerLayout?.gravity = Gravity.LEFT
                 bannerContainerLayout?.setBackgroundColor(0x000000)
 
                 val layoutParams = RelativeLayout.LayoutParams(
@@ -106,7 +106,7 @@ internal class BannerAdsHelper(
                     RelativeLayout.LayoutParams.WRAP_CONTENT
                 )
 
-                layoutParams.addRule(RelativeLayout.CENTER_HORIZONTAL)
+                layoutParams.addRule(RelativeLayout.CENTER_VERTICAL)
 
                 bannerContainerLayout?.addView(mBannerAdView, layoutParams)
 
